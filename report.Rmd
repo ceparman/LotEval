@@ -1,0 +1,14 @@
+---
+title: "New Control Lot Evaluation"
+output:  pdf_document
+---
+ 
+```{r data, echo=FALSE}
+library(knitr)
+plt<-ggplot2::ggplot(plotdata,aes(x=index,y=specData))
+plt<-plt+geom_point()
+
+library(gridExtra)
+
+kable(x=plotdata,format="markdown")
+```
